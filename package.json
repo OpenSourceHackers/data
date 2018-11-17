@@ -1,0 +1,23 @@
+{
+  "name": "opensourcehackersdata",
+  "version": "1.0.0",
+  "description": "example data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenSourceHackers/data.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OpenSourceHackers/data/issues"
+  },
+  "homepage": "https://github.com/OpenSourceHackers/data#readme",
+  "dependencies": {
+    "elasticsearch": "^15.2.0",
+    "json2csv": "^4.3.0"
+  }
+}
