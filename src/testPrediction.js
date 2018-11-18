@@ -4,7 +4,7 @@ const rp = require('request-promise');
 const TRAINING_KEY = process.env.TRAINING_KEY;
 const PREDICTION_KEY = process.env.PREDICTION_KEY;
 const PROJECT_ID = process.env.PROJECT_ID;
-const ITERATION_ID = process.env.ITERATION_ID;
+const ITERATION_ID = process.env.ITERATION_ID || 1;
 
 // 1. get list of test files
 const files = [
