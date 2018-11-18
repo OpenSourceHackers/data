@@ -4,7 +4,7 @@ const fs = require("fs");
 // envars
 const TRAINING_KEY = process.env.TRAINING_KEY;
 const PREDICTION_KEY = process.env.PREDICTION_KEY;
-const PROJECT_ID = '33f10f0e-0c55-4666-a441-8b82ad297db3';
+const PROJECT_ID = process.env.PROJECT_ID;
 
 // load tags
 const tags = JSON.parse(fs.readFileSync('build/tags.json'));

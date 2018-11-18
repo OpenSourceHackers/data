@@ -13,6 +13,7 @@
 Example usage:
 
 ```
-PREDICTION_KEY=abc TRAINING_KEY=def node src/downloadTags.js
-PREDICTION_KEY=abc TRAINING_KEY=def node src/uploadImages.js
+PREDICTION_KEY=abc TRAINING_KEY=def PROJECT_ID=hij node src/downloadTags.js
+PREDICTION_KEY=abc TRAINING_KEY=def PROJECT_ID=hij node src/uploadImages.js
+PREDICTION_KEY=abc TRAINING_KEY=def PROJECT_ID=hij node src/train.js
 ```
