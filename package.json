@@ -18,6 +18,8 @@
   "homepage": "https://github.com/OpenSourceHackers/data#readme",
   "dependencies": {
     "elasticsearch": "^15.2.0",
-    "json2csv": "^4.3.0"
+    "json2csv": "^4.3.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
   }
 }
