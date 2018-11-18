@@ -11,23 +11,51 @@ const tags = JSON.parse(fs.readFileSync('build/tags.json'));
 
 // 1. get list of files @TODO: get from kagal
 const files = [
-    'https://github.com/OpenSourceHackers/data/raw/master/img/NLRC_14917_Dr-none1.jpg',
-    'https://github.com/OpenSourceHackers/data/raw/master/img/NLRC_14917_Dr-none2.jpg',
-    'https://github.com/OpenSourceHackers/data/raw/master/img/NLRC_14917_Dr-none3.jpg',
-    'https://github.com/OpenSourceHackers/data/raw/master/img/NLRC_14917_Dr-none4.jpg',
-    'https://github.com/OpenSourceHackers/data/raw/master/img/NLRC_14917_Dr-none5.jpg',
-
-    'https://github.com/OpenSourceHackers/data/raw/master/img/NLRC_14917_Dr-partial1.jpg',
-    'https://github.com/OpenSourceHackers/data/raw/master/img/NLRC_14917_Dr-partial2.jpg',
-    'https://github.com/OpenSourceHackers/data/raw/master/img/NLRC_14917_Dr-partial3.jpg',
-    'https://github.com/OpenSourceHackers/data/raw/master/img/NLRC_14917_Dr-partial4.jpg',
-    'https://github.com/OpenSourceHackers/data/raw/master/img/NLRC_14917_Dr-partial5.jpg',
-
-    'https://github.com/OpenSourceHackers/data/raw/master/img/NLRC_14917_Dr-significant1.jpg',
-    'https://github.com/OpenSourceHackers/data/raw/master/img/NLRC_14917_Dr-significant2.jpg',
-    'https://github.com/OpenSourceHackers/data/raw/master/img/NLRC_14917_Dr-significant3.jpg',
-    'https://github.com/OpenSourceHackers/data/raw/master/img/NLRC_14917_Dr-significant4.jpg',
-    'https://github.com/OpenSourceHackers/data/raw/master/img/NLRC_14917_Dr-significant5.jpg',
+    '62_RescUAV_12917_Philipsburg.tif_none.jpg',
+    '609_RescUAV_12917_Philipsburg.tif_none.jpg',
+    '608_RescUAV_12917_Philipsburg.tif_significant.jpg',
+    '607_RescUAV_12917_Philipsburg.tif_destroyed.jpg',
+    '606_RescUAV_12917_Philipsburg.tif_none.jpg',
+    '604_RescUAV_12917_Philipsburg.tif_partial.jpg',
+    '603_RescUAV_12917_Philipsburg.tif_significant.jpg',
+    '602_RescUAV_12917_Philipsburg.tif_none.jpg',
+    '601_RescUAV_12917_Philipsburg.tif_none.jpg',
+    '600_RescUAV_12917_Philipsburg.tif_none.jpg',
+    '599_RescUAV_12917_Philipsburg.tif_none.jpg',
+    '598_RescUAV_12917_Philipsburg.tif_significant.jpg',
+    '597_RescUAV_12917_Philipsburg.tif_partial.jpg',
+    '596_RescUAV_12917_Philipsburg.tif_significant.jpg',
+    '595_RescUAV_12917_Philipsburg.tif_none.jpg',
+    '594_RescUAV_12917_Philipsburg.tif_none.jpg',
+    '593_RescUAV_12917_Philipsburg.tif_none.jpg',
+    '592_RescUAV_12917_Philipsburg.tif_significant.jpg',
+    '591_RescUAV_12917_Philipsburg.tif_significant.jpg',
+    '590_RescUAV_12917_Philipsburg.tif_partial.jpg',
+    '589_RescUAV_12917_Philipsburg.tif_significant.jpg',
+    '583_RescUAV_12917_Philipsburg.tif_partial.jpg',
+    '582_RescUAV_12917_Philipsburg.tif_unknown.jpg',
+    '578_RescUAV_12917_Philipsburg.tif_significant.jpg',
+    '577_RescUAV_12917_Philipsburg.tif_partial.jpg',
+    '576_RescUAV_12917_Philipsburg.tif_significant.jpg',
+    '576_RescUAV_12917_Philipsburg.tif_significant',
+    '575_RescUAV_12917_Philipsburg.tif_none.jpg',
+    '574_RescUAV_12917_Philipsburg.tif_significant.jpg',
+    '573_RescUAV_12917_Philipsburg.tif_none.jpg',
+    '572_RescUAV_12917_Philipsburg.tif_partial.jpg',
+    '566_RescUAV_12917_Philipsburg.tif_significant.jpg',
+    '565_RescUAV_12917_Philipsburg.tif_significant.jpg',
+    '564_RescUAV_12917_Philipsburg.tif_destroyed.jpg',
+    '55_RescUAV_12917_Philipsburg.tif_significant.jpg',
+    '530_RescUAV_12917_Philipsburg.tif_partial.jpg',
+    '524_RescUAV_12917_Philipsburg.tif_destroyed.jpg',
+    '520_RescUAV_12917_Philipsburg.tif_destroyed.jpg',
+    '517_RescUAV_12917_Philipsburg.tif_destroyed.jpg',
+    '512_RescUAV_12917_Philipsburg.tif_destroyed.jpg',
+    '503_RescUAV_12917_Philipsburg.tif_destroyed.jpg',
+    '49_RescUAV_12917_Philipsburg.tif_none.jpg',
+    '499_RescUAV_12917_Philipsburg.tif_none.jpg',
+    '496_RescUAV_12917_Philipsburg.tif_none.jpg',
+    '451_RescUAV_12917_Philipsburg.tif_partial.jpg'
 ];
 
 // 2. extract category from file name
@@ -72,3 +100,6 @@ rp(options)
     .catch((error) => {
         console.log(error);
     });
+
+
+    
